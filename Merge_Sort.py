@@ -1,5 +1,6 @@
-#merge sort
- 
+import colorama
+from colorama import Fore
+
 def merge(arr, l, m, r):
     n1 = m - l + 1
     n2 = r - m
@@ -49,12 +50,12 @@ def mergeSort(arr, l, r):
  
 arr = [83, 86, 41, 29, 43, 58, 76, 77, 52, 15]
 n = len(arr)
-print("unsorted")
+print(Fore.RED +"unsorted")
 for i in range(n):
     print("%d" % arr[i],end=" ")
  
 mergeSort(arr, 0, n-1)
 print("")
-print("Sorted ")
+print(Fore.GREEN + "Sorted ")
 for i in range(n):
     print("%d" % arr[i],end=" ")
