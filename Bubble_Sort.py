@@ -1,3 +1,6 @@
+import colorama
+from colorama import Fore
+
 def bubbleSort(arr):
     n = len(arr)
     swapped = False
@@ -14,11 +17,13 @@ def bubbleSort(arr):
  
 arr = [83, 86, 41, 29, 43, 58, 76, 77, 52,15]
 n = len(arr)
+print(Fore.RED + "unsorted")
 for i in range(n):
     print("%d" % arr[i],end=" ")
 
  
 bubbleSort(arr)
-print("Sorted array",)
+print("")
+print(Fore.GREEN + "sorted",)
 for i in range(len(arr)):
     print("% d" % arr[i], end=" ")
