@@ -26,4 +26,4 @@ bubbleSort(arr)
 print("")
 print(Fore.GREEN + "sorted",)
 for i in range(len(arr)):
-    print("% d" % arr[i], end=" ")
+    print("%d" % arr[i], end=" ")
