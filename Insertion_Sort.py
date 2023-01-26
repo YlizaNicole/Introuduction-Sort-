@@ -14,7 +14,13 @@ def Sort(arr):
         arr[j+1] = key
  
 arr = [83, 86, 41, 29, 43, 58, 76, 77, 52, 15]
-print("unsorted array", arr)
+print("unsorted")
+n = len(arr)
+for i in range(n):
+    print("%d" % arr[i],end=" ")
+
 Sort(arr)
 print("")
-print(arr)
+print("sorted:")
+for i in range(n):
+    print("%d" % arr[i],end=" ")
