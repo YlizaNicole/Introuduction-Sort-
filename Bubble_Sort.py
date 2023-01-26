@@ -12,12 +12,13 @@ def bubbleSort(arr):
             return
  
  
-arr = [83, 86, 41, 29, 43, 58, 76, 77, 52, 15]
-print("unsorted array", arr)
+arr = [83, 86, 41, 29, 43, 58, 76, 77, 52,15]
+n = len(arr)
+for i in range(n):
+    print("%d" % arr[i],end=" ")
+
  
 bubbleSort(arr)
-
 print("Sorted array",)
 for i in range(len(arr)):
-    print("")
     print("% d" % arr[i], end=" ")
